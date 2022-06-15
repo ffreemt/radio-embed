@@ -1,7 +1,6 @@
 """Test radio_embed."""
 # pylint: disable=broad-except
-from radio_embed import __version__
-from radio_embed import radio_embed
+from radio_embed import __version__, radio_embed
 
 
 def test_version():
@@ -15,3 +14,12 @@ def test_sanity():
         assert not radio_embed()
     except Exception:
         assert True
+
+
+def test_radio_embed_two_three_lines():
+    """Test radio_embed two three lines."""
+    res = radio_embed("a\n b")
+    assert res.shape == (2, 512)
+
+    res = radio_embed("a\n \nb").shape
+    assert res == (3, 512)
