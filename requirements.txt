@@ -38,3 +38,4 @@ tqdm==4.64.0; python_full_version >= "3.8.3" and python_version >= "3.7" and pyt
 transformers==4.19.4; python_full_version >= "3.7.0"
 typing-extensions==4.2.0; python_version >= "3.7" and python_full_version >= "3.8.3" and python_full_version < "4.0.0"
 urllib3==1.26.9; python_full_version >= "3.7.0" and python_version < "4" and python_version >= "3.7"
+sentence-transformers
