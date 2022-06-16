@@ -15,7 +15,7 @@ def radio_embed(
 ) -> numpy.ndarray:
     """Embed input."""
     try:
-        _ = model.encode(text.splitlines())
+        _ = model.encode(text.strip().splitlines())
     except Exception as _:
         logger.exception(_)
         raise
