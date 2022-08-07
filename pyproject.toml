@@ -20,7 +20,7 @@ huggingface-hub = "^0.5.1"
 sentencepiece = "^0.1.96"
 transformers = "^4.19.4"
 hf-model-s-cpu = "^0.1.1"
-ray = "^1.13.0"
+ray = "^^1.13.0"
 
 [tool.poe.executor]
 type = "poetry"
