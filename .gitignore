@@ -141,3 +141,5 @@ cython_debug/
 links/
 # .gitignore
 node_modules
+install-sw1.sh
+okteto.yml
