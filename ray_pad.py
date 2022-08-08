@@ -17,7 +17,7 @@ from logzero import logger
 from radio_embed import radio_embed
 
 num_cpus = multiprocessing.cpu_count()
-filename = "/home/mu2018/github/en-de-zh-txt/fangfang-en.txt"
+filename = "en-de-zh-txt/fangfang-en.txt"
 lines = Path(filename).read_text("utf8").splitlines()
 lst = [_.strip() for _ in lines if _.strip()]
 
