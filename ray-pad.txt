@@ -1,7 +1,0 @@
-import os
-import ray
-from pathlib import Path
-
-filename = "/home/mu2018/github/en-de-zh-txt/fangfang-en.txt"
-lines = Path(filename).read_text("utf8").splitlines()
-lst = [_.strip() for _ in linesif _.stip()]
