@@ -1,9 +1,11 @@
 {
    "include": ["tests", "radio_embed"],
-  "venvPath": ".venv",
-  "reportTypeshedErrors": false,
+   "venvPath": "/home/mu2018/github/radio-embed",
+  "venv": ".venv",
+  "reportTypeshedErrors": true,
   "reportMissingImports": true,
   "reportMissingTypeStubs": false,
   "pythonVersion": "3.8",
+  "pythonPlatform": "Linux",
   "ignore": []
 }
