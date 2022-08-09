@@ -25,11 +25,8 @@ rm setup_14.x
 # apt update  # alerady done in apt-get install -y nodejs
 
 # install sshd and publickey
-apt-get install openssh-server
-/etc/init.d/ssh restart
-mkdir -p ~/.ssh
-echo ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOl+SiDFL1ZUh1QJ0454eYKtamkMCVs2hhuv3cWN1LU7 id_ed25519_colab >> ~/.ssh/authorized_keys
-
+# apt-get install openssh-server
+# /etc/init.d/ssh restart && mkdir -p ~/.ssh && echo ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOl+SiDFL1ZUh1QJ0454eYKtamkMCVs2hhuv3cWN1LU7 id_ed25519_colab > ~/.ssh/authorized_keys
 
 apt install byobu -y > /dev/null 2>&1
 byobu-enable
