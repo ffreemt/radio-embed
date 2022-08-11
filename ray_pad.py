@@ -17,13 +17,9 @@ from logzero import logger
 
 from radio_embed import radio_embed
 
-<<<<<<< HEAD
 num_cpus_m = multiprocessing.cpu_count()
 num_cpus = psutil.cpu_count(logical=False)
 
-=======
-num_cpus = multiprocessing.cpu_count()
->>>>>>> 965de0b991120d813eaf80e0000c249f96f83472
 filename = "fangfang-en.txt"
 lines = Path(filename).read_text("utf8").splitlines()
 lst = [_.strip() for _ in lines if _.strip()]
